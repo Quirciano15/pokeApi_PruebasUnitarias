@@ -1,14 +1,9 @@
 import './polyfills';
-
 import './test/jasmine-setup';
-
 import 'jasmine-core/lib/jasmine-core/jasmine-html.js';
 import 'jasmine-core/lib/jasmine-core/boot.js';
-
 import './test.ts';
-
 import { AppModule } from './app/app.module';
-
 import { platformBrowserDynamicTesting } from '@angular/platform-browser-dynamic/testing';
 
 platformBrowserDynamicTesting()

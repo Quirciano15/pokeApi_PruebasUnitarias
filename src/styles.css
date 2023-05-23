@@ -1,13 +1,32 @@
-/* Add application styles & imports to this file! */
 @import 'jasmine-core/lib/jasmine-core/jasmine.css';
 @import 'purecss/build/pure-min.css';
 
-.layout p {
-  margin: 0px;
+body {
+  background-color: antiquewhite;
+  margin: 0;
 }
 
-.layout > * {
-  margin: 10px;
-  display: block;
-  overflow: hidden;
+/* logo pokedex */
+.pokedex {
+  margin: 0;
+  margin-left: 20px;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  color: #fffb00;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  letter-spacing: -2px;
+  -webkit-text-stroke: 2px rgb(30, 0, 255);
+  text-stroke: 2px rgb(30, 0, 255);
+}
+
+.cabecera {
+  background-color: rgb(74, 74, 74);
+  margin: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99999;
+  display: flex;
 }
