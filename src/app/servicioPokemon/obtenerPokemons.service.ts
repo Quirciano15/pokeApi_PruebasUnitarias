@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 
 @Injectable()
 export class ObtenerPokemonsService {
-  url: String;
+  url: string;
 
   constructor(private http: HttpClient) {
     //esta url nos devuelve solo los primeros 20 pokemon pero si despues le añadimos un numero nos devuelve los datos de ese pokemon

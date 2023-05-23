@@ -28,10 +28,10 @@ describe('BarraBusquedaComponent', () => {
     expect(component.textBusaqueda).toEqual('');
   });
 
-  it('deberia emitir el evento cuando la function buscarFunction es llamda', () => {
+  it('deberia emitir el evento cuando la function buscarFunction es llamada', () => {
     spyOn(component.eventoChange, 'emit');
-    component.textBusaqueda = 'search term';
+    component.textBusaqueda = 'texto busqueda';
     component.buscarFunction();
-    expect(component.eventoChange.emit).toHaveBeenCalledWith('search term');
+    expect(component.eventoChange.emit).toHaveBeenCalledWith('texto busqueda');
   });
 });

@@ -3,13 +3,12 @@ import { CommonModule } from '@angular/common';
 import { ObtenerPokemonsService } from '../servicioPokemon/obtenerPokemons.service';
 import { BarraBusquedaComponent } from '../barra-busqueda/barra-busqueda.component';
 import { ClasePokemonService } from '../clasePokemon/clasePokemon.service';
+import { forkJoin } from 'rxjs';
 
 @Component({
   selector: 'app-pokemon',
   templateUrl: './pokemon.component.html',
   styleUrls: ['./pokemon.component.css'],
-  // standalone: true,
-  // imports: [CommonModule, BarraBusquedaComponent],
   providers: [ObtenerPokemonsService],
 })
 export class PokemonComponent implements OnInit {

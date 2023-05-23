@@ -5,8 +5,8 @@ export class ClasePokemonService {
   nombre: string;
   imagen: string;
   tipo: any[];
-  peso: number;
-  altura: number;
+  peso: Number;
+  altura: Number;
   stats: any[];
   posicion: string;
 
