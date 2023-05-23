@@ -2,29 +2,21 @@ import { Injectable } from '@angular/core';
 
 @Injectable()
 export class ClasePokemonService {
-  nombre: String;
-  imagen: String;
-  tipo: Array<any>;
-  peso: Number;
-  altura: Number;
-  stats: Array<any>;
-  posicion: String;
+  nombre: string;
+  imagen: string;
+  tipo: any[];
+  peso: number;
+  altura: number;
+  stats: any[];
+  posicion: string;
 
-  constructor(
-    nombre: String,
-    imagen: String,
-    tipo: Array<any>,
-    peso: Number,
-    altura: Number,
-    stats: Array<any>,
-    posicion: String
-  ) {
-    this.nombre = nombre;
-    this.imagen = imagen;
-    this.tipo = tipo;
-    this.peso = peso;
-    this.altura = altura;
-    this.stats = stats;
-    this.posicion = posicion;
+  constructor() {
+    this.nombre = '';
+    this.imagen = '';
+    this.tipo = [];
+    this.peso = 0;
+    this.altura = 0;
+    this.stats = [];
+    this.posicion = '';
   }
 }
